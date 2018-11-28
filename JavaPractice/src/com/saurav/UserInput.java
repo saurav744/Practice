@@ -13,8 +13,8 @@ public class UserInput {
         System.out.println("Enter your year of birth:");
         int year= scanner.nextInt();
 
-        while(year > 2018) {
-            System.out.println("Invalid year. Birth year cannot be greater than 2018. Please enter again: ");
+        while(year > 2018 || year < 0) {
+            System.out.println("Invalid year. Birth year cannot be negative or greater than 2018. Please enter again: ");
             year= scanner.nextInt();
         }
 
