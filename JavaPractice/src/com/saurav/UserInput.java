@@ -11,11 +11,27 @@ public class UserInput {
         String name = scanner.nextLine();
 
         System.out.println("Enter your year of birth:");
-        int year= scanner.nextInt();
 
-        while(year > 2018 || year < 0) {
-            System.out.println("Invalid year. Birth year cannot be negative or greater than 2018. Please enter again: ");
+        boolean hasnextInt= scanner.hasNextInt();
+        int year = 0;
+
+        if(hasnextInt)
             year= scanner.nextInt();
+
+        while (hasnextInt == false || year > 2018 || year < 0) {
+
+            if(hasnextInt == false)
+            {
+                scanner.nextLine();
+                System.out.println("Please enter an integer value:");
+            } else {
+                scanner.nextLine();
+                System.out.println("Invalid year. Birth year cannot be negative or greater than 2018. Please enter again: ");
+            }
+
+            hasnextInt= scanner.hasNextInt();
+            if(hasnextInt)
+                year = scanner.nextInt();
         }
 
         int age = 2018-year;
