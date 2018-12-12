@@ -1,5 +1,8 @@
 package com.saurav.myblogapp.control.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class User {
 
     private long id;
@@ -8,8 +11,8 @@ public class User {
     private String email;
     private String password;
     private UserType type;
-
-    //private List<Publication> publications;
+    private List<Publication> publications;
+    private List<Long> liked_pubs;
 
     public User(String first_name, String last_name, String email, String password) {
 
@@ -23,8 +26,27 @@ public class User {
         this.email = email;
         this.password = password;
         this.type = type;
+        this.publications = new ArrayList<>();
     }
 
+    @Override
+    public int hashCode() {
+
+        return email.hashCode();
+
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+
+        if (obj == this) return true;
+        if (!(obj instanceof User)) {
+            return false;
+        }
+
+        User user = (User) obj;
+        return user.getEmail().equals(email);
+    }
 
     public long getId() {
         return id;
@@ -68,6 +90,22 @@ public class User {
 
     public UserType getType() {
         return type;
+    }
+
+    public List<Long> getLiked_pubs() {
+        return liked_pubs;
+    }
+
+    public void addLiked_pubs(Long id) {
+        this.liked_pubs.add(id);
+    }
+
+    public List<Publication> getPublications() {
+        return publications;
+    }
+
+    public void addPublications(Publication publication) {
+        this.publications.add(publication);
     }
 
     public void setType(UserType type) {

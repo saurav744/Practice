@@ -1,17 +1,17 @@
 package com.saurav.myblogapp.data_access;
 
 import com.saurav.myblogapp.control.model.Publication;
-import com.saurav.myblogapp.control.model.User;
+import com.saurav.myblogapp.control.model.PublicationState;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 public class PublicationRepositoryImpl implements PublicationRepository {
 
     private Map<Long, Publication> publications = new HashMap<>();
     private Map<Long, Publication> pending = new HashMap<>();
-    private long next_id = 0;
+    private long next_id = 1;
 
 
 
@@ -19,8 +19,15 @@ public class PublicationRepositoryImpl implements PublicationRepository {
     public void addPublication(Publication publication) {
 
         publication.setId(next_id);
-        publications.put(next_id,publication);
+        pending.put(next_id,publication);
         next_id++;
+
+    }
+
+    @Override
+    public void addtoApproved(long id, Publication publication) {
+
+        publications.put(id, publication);
 
     }
 
@@ -32,33 +39,39 @@ public class PublicationRepositoryImpl implements PublicationRepository {
     }
 
     @Override
-    public void updatepublication(long id, Publication publication) {
+    public void removePending(long id) {
+
+        pending.remove(id);
 
     }
 
     @Override
-    public List<Publication> getpublications(User author) {
-        return null;
+    public void updatepublication(long id, Publication publication) {
+
+        Publication pub_old= getpublicationbyid(id);
+        pub_old.setBody(publication.getBody());
+        pub_old.setTitle(publication.getTitle());
+
     }
 
     @Override
     public Publication getpublicationbyid(long id) {
-        return publications.get(id);
+        Publication ret= publications.get(id);
+        if(ret == null)
+            ret = pending.get(id);
+
+        return ret;
     }
 
     @Override
-    public void changetype(Publication publication) {
-
-
-    }
-
-    @Override
-    public void approve_publication(long id) {
+    public void changeState(long id, PublicationState state) {
+        Publication pub = getpublicationbyid(id);
+        pub.setState(state);
 
     }
 
     @Override
-    public List<Publication> getallpublications() {
-        return null;
+    public Set<Map.Entry<Long, Publication>> getallpublications() {
+        return publications.entrySet();
     }
 }

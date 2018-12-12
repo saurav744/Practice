@@ -10,49 +10,54 @@ import java.util.Scanner;
 
 public class MyBlogAppClient {
 
-    public void blogapp() {
+    public void blogApp() {
 
         UserService usr = UserServiceFactory.getUserServiceInstance();
-        PublicationService pub= PublicationServiceFactory.getPublicationServiceInstance();
+        PublicationService pub = PublicationServiceFactory.getPublicationServiceInstance();
 
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         int option;
 
         loginpage();
 
-        option = sc.nextInt();
+        option = scanner.nextInt();
 
         do {
-
             switch(option) {
-
 
                 case 1:
                     System.out.println("Enter first name, last name, email id and password for creating new user: ");
-                    String first= scan();
-                    String last = scan();
-                    String email = scan();
-                    String password = scan();
+                    String first= scanline();
+                    String last = scanline();
+                    String email = scanline();
+                    String password = scanline();
 
-                    usr.signup(first, last, email, password);
+                    int ret = usr.signup(first, last, email, password);
+
+                    if(ret == 0)
+                        System.out.println("User with email \""+email+"\" created succesfully");
+                    else
+                        System.out.println("User with same email already exists.");
+
 
                     break;
 
-
-
                 case 2:
-
                     System.out.println("Enter email id and password for logging in: ");
 
-                    String emailid = scan();
-                    String usrpassword = scan();
+                    String emailid = scanline();
+                    String usrpassword = scanline();
 
-                    UserType type= usr.login(emailid, usrpassword);
+                    UserType type = usr.login(emailid, usrpassword);
 
                     if(type == UserType.FAILED) {
                         System.out.println("Invalid credentials");
                         break;
+                    }
+
+                    else if (type == UserType.NOT_EXISTS) {
+                        System.out.println("User does not exists");
                     }
 
                     else if (type == UserType.ADMIN)
@@ -66,20 +71,14 @@ public class MyBlogAppClient {
 
                     break;
 
-
-
                 default:
-                    System.out.println("enter correct menu options");
-
+                    System.out.println("Enter correct menu options");
 
             }
 
-
             System.out.println("Enter options from menu:");
 
-            option = sc.nextInt();
-
-
+            option = scanner.nextInt();
 
         } while (option != 3);
 
@@ -90,6 +89,8 @@ public class MyBlogAppClient {
 
         // give admin options here
 
+        System.out.println("Admin console started.");
+
     }
 
 
@@ -97,19 +98,18 @@ public class MyBlogAppClient {
 
         // give moderator options here
 
-
+        System.out.println("Moderator console started.");
 
     }
 
 
     public void start_blogger_console() {
 
-
         // give normal blogger options here
 
+        System.out.println("Blogger console started.");
+
     }
-
-
 
 
     public void loginpage() {
@@ -117,18 +117,19 @@ public class MyBlogAppClient {
         System.out.println("Enter options from menu:");
         System.out.println("1. Sign Up ");
         System.out.println("2. Login existing user ");
-        System.out.println("3. exit");
-        
+        System.out.println("3. Exit ");
+
     }
 
 
-    public static String scan() {
-        Scanner s = new Scanner(System.in);
+    public static String scanline() {
+        Scanner scanner = new Scanner(System.in);
         String input;
-        if (s.hasNextLine()) {
-            input = s.nextLine();
-        } else {
-            input = "ERROR";
+        if (scanner.hasNextLine()) {
+            input = scanner.nextLine();
+        }
+        else {
+            input = "!ERROR_NO_INPUT!";
         }
         return input;
     }

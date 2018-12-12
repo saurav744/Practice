@@ -18,10 +18,16 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void signup(String firstname, String lastname, String email, String password) {
+    public int signup(String firstname, String lastname, String email, String password) {
+
+        if(userRepository.hasuser(email))
+            return -1;
 
         User user = new User(firstname, lastname, email, password);
+
+
         userRepository.adduser(user);
+        return 0;
 
     }
 
@@ -39,7 +45,7 @@ public class UserServiceImpl implements UserService {
             return UserType.FAILED;
         }
 
-        return UserType.FAILED;
+        return UserType.NOT_EXISTS;
     }
 
     @Override
@@ -63,7 +69,7 @@ public class UserServiceImpl implements UserService {
     public void deleteuser(long id) {
 
         User user = getuserbyid(id);
-        if(curr_user.getType() == UserType.ADMIN || curr_user.getEmail().equalsIgnoreCase(user.getEmail())) {
+        if(curr_user != null && (curr_user.getType() == UserType.ADMIN || curr_user.getEmail().equalsIgnoreCase(user.getEmail()))) {
 
             userRepository.deleteuser(id);
         }

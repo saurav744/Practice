@@ -8,6 +8,6 @@ public class MyBlogApp {
 
         MyBlogAppClient client = new MyBlogAppClient();
 
-        client.blogapp();
+        client.blogApp();
     }
 }

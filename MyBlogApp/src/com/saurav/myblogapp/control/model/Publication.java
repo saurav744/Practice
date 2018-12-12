@@ -20,9 +20,13 @@ public class Publication {
     public Publication(String title, String body, User author, Date date) {
         this.title = title;
         this.body = body;
-        this.authors= new ArrayList<>();
+        this.authors = new ArrayList<>();
         this.authors.add(author);
-        this.added_date= date;
+        this.added_date = date;
+        this.likes = 0;
+        this.state = PublicationState.PENDING;
+        this.comments = new ArrayList<>();
+
     }
 
     public String getTitle() {
@@ -45,8 +49,8 @@ public class Publication {
         return likes;
     }
 
-    public void setLikes(long likes) {
-        this.likes = likes;
+    public void incrementLikes() {
+        this.likes++;
     }
 
     public Date getAdded_date() {
@@ -77,15 +81,15 @@ public class Publication {
         return authors;
     }
 
-    public void setAuthors(List<User> authors) {
-        this.authors = authors;
+    public void addAuthor(User author) {
+        this.authors.add(author);
     }
 
     public List<Comment> getComments() {
         return comments;
     }
 
-    public void setComments(List<Comment> comments) {
-        this.comments = comments;
+    public void addComment(Comment comment) {
+        this.comments.add(comment);
     }
 }

@@ -1,9 +1,10 @@
 package com.saurav.myblogapp.data_access;
 
 import com.saurav.myblogapp.control.model.Publication;
-import com.saurav.myblogapp.control.model.User;
+import com.saurav.myblogapp.control.model.PublicationState;
 
-import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public interface PublicationRepository {
 
@@ -13,13 +14,15 @@ public interface PublicationRepository {
 
     public void updatepublication(long id, Publication publication);
 
-    public List<Publication> getpublications(User author);
+   // public List<Publication> getpublications(User author);
 
     public Publication getpublicationbyid(long id);
 
-    public void changetype(Publication publication);
+    public void changeState(long id, PublicationState state);
 
-    public void approve_publication (long id);
+    public void removePending (long id);
 
-    public List<Publication> getallpublications();
+    public Set<Map.Entry<Long, Publication>> getallpublications();
+
+    public void addtoApproved (long id, Publication publication);
 }

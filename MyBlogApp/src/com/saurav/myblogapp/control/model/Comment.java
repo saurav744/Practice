@@ -8,9 +8,10 @@ public class Comment {
     private Date added_date;
     private User user;
 
-    public Comment(String body, User user) {
+    public Comment(String body, User user, Date date) {
         this.body = body;
         this.user = user;
+        this.added_date = date;
     }
 
     public String getBody() {

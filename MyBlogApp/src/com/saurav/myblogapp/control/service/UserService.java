@@ -8,7 +8,7 @@ import java.util.Set;
 
 public interface UserService {
 
-    public void signup(String firstname, String lastname, String email, String password);
+    public int signup(String firstname, String lastname, String email, String password);
 
     public UserType login(String email, String password);
 
