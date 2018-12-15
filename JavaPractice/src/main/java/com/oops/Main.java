@@ -8,7 +8,7 @@ public class Main extends Object{
         Animal animal2 = null;
         String s= "bunny";
 
-        System.out.println("value are : "+animal.anm+"  and ");
+        System.out.println("value are : "+animal.getName()+"  and ");
 
         Dog dog = new Dog("Bulldog", 8, 20, 2, 4, 1, 20);
         dog.eat();
