@@ -4,9 +4,9 @@ import com.saurav.myblogapp.control.model.User;
 import com.saurav.myblogapp.control.model.UserType;
 import com.saurav.myblogapp.exceptions.UserNotFoundException;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 public class UserRepositoryImpl implements UserRepository  {
 
@@ -49,9 +49,6 @@ public class UserRepositoryImpl implements UserRepository  {
 
         User user_old= getUserById(id);
         if(user_old != null) {
-//            user_old.setFirstName(user.getFirstName());
-//            user_old.setLastName(user.getLastName());
-//            user_old.setPassword(user.getPassword());
             user_old.setFirstName(firstName);
             user_old.setLastName(lastName);
             user_old.setPassword(password);
@@ -90,8 +87,9 @@ public class UserRepositoryImpl implements UserRepository  {
     }
 
     @Override
-    public Set<Map.Entry<Long, User>> getAllUsers() {
-        return usersId.entrySet();
+    public ArrayList<User> getAllUsers() {
+        ArrayList<User> usersList = new ArrayList<>(usersId.values());
+        return usersList;
     }
 
 }

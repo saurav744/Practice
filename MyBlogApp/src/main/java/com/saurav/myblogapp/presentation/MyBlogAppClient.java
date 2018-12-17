@@ -1,15 +1,13 @@
 package com.saurav.myblogapp.presentation;
 
-import com.saurav.myblogapp.control.model.Publication;
-import com.saurav.myblogapp.control.model.User;
-import com.saurav.myblogapp.control.model.UserComment;
-import com.saurav.myblogapp.control.model.UserType;
+import com.saurav.myblogapp.control.model.*;
 import com.saurav.myblogapp.control.service.PublicationService;
 import com.saurav.myblogapp.control.service.PublicationServiceFactory;
 import com.saurav.myblogapp.control.service.UserService;
 import com.saurav.myblogapp.control.service.UserServiceFactory;
 import com.saurav.myblogapp.exceptions.UserNotFoundException;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
@@ -93,8 +91,6 @@ public class MyBlogAppClient {
 
             }
 
-          //  System.out.println("Enter options from menu:");
-
             if(option != 3) {
                 loginpage();
                 option = scanner.nextInt();
@@ -109,18 +105,351 @@ public class MyBlogAppClient {
 
     public void start_admin_console(){
 
-        // give admin options here
+        int option;
 
-        System.out.println("Admin console started.");
+        adminOptions();
+
+        option = scanner.nextInt();
+
+        do {
+
+            switch (option) {
+
+                case 1:
+
+                    viewMyProfile();
+                    break;
+
+                case 2:
+                    viewMyPublications();
+
+                case 3:
+                    writePublication();
+
+                case 4:
+                    search();
+
+                case 5:
+                    approvePending();
+
+                case 6:
+                    viewPublicationsAdmin();
+
+                case 7:
+                    viewUsersAdmin();
+
+
+                case 8:
+                    usr.logout();
+                    System.out.printf("Logged out succesfully %n%n");
+                    break;
+
+                default:
+                    System.out.println("Enter correct menu option.");
+            }
+
+            if (option != 8) {
+
+                bloggeroptions();
+                option = scanner.nextInt();
+                if(option == 6) {
+                    usr.logout();
+                    System.out.printf("Logged out succesfully %n%n");
+                }
+            }
+
+        } while (option != 8);
+
 
     }
 
 
     public void start_moderator_console() {
 
-        // give moderator options here
+        int option;
 
-        System.out.println("Moderator console started.");
+        adminOptions();
+
+        option = scanner.nextInt();
+
+        do {
+
+            switch (option) {
+
+                case 1:
+
+                    viewMyProfile();
+                    break;
+
+                case 2:
+                    viewMyPublications();
+
+                case 3:
+                    writePublication();
+
+                case 4:
+                    search();
+
+                case 5:
+                    approvePending();
+
+                case 6:
+                    viewPublicationsAdmin();
+
+                case 7:
+                    viewUsersModerator();
+
+
+                case 8:
+                    usr.logout();
+                    System.out.printf("Logged out succesfully %n%n");
+                    break;
+
+                default:
+                    System.out.println("Enter correct menu option.");
+            }
+
+            if (option != 8) {
+
+                bloggeroptions();
+                option = scanner.nextInt();
+                if(option == 6) {
+                    usr.logout();
+                    System.out.printf("Logged out succesfully %n%n");
+                }
+            }
+
+        } while (option != 8);
+
+    }
+
+
+    public void adminOptions() {
+        System.out.println("Choose options :");
+        System.out.println("1. View Profile");
+        System.out.println("2. View publications");
+        System.out.println("3. Write Publication");
+        System.out.println("4. Search");
+        System.out.println("5. Approve pending publications");
+        System.out.println("6.View all publications");
+        System.out.println("7.View all users");
+        System.out.println("8. Logout");
+    }
+
+
+
+    public void approvePending() {
+
+        System.out.println("List of pending publications: ");
+        ArrayList<Publication> pb= pub.getPending();
+        printPublicationsList(pb);
+        approvePendingOptions();
+
+        int option = scanner.nextInt();
+
+        do {
+            switch (option) {
+                case 1:
+                    System.out.println("Enter publication id from the list to approve: ");
+                    long id = scanner.nextLong();
+                    pub.approvePublication(id, usr.getCurrUser());
+                    break;
+
+                case 2:
+                    break;
+
+                default:
+                    System.out.println("Enter correct menu option.");
+            }
+            if (option != 2) {
+                approvePendingOptions();
+                option = scanner.nextInt();
+            }
+
+        } while (option != 2);
+
+    }
+
+    public void approvePendingOptions() {
+        System.out.println("Enter options: ");
+        System.out.println("1. Enter id to approve");
+        System.out.println("2. Return to Home");
+
+    }
+
+    public void viewPublicationsAdmin() {
+
+        List<Publication> list = pub.getAllPublications();
+        int option;
+
+        printPublicationsList(list);
+        publicationsListOptions();
+
+        option = scanner.nextInt();
+
+        do {
+            switch (option) {
+                case 1:
+                    System.out.println("Enter publication id from the list: ");
+                    long id = scanner.nextLong();
+                    printPublication(pub.getPublicationById(id));
+                    break;
+
+                case 2:
+                    break;
+
+                default:
+                    System.out.println("Enter correct menu option.");
+            }
+            if (option != 2) {
+                publicationsListOptions();
+                option = scanner.nextInt();
+            }
+
+        } while (option != 2);
+
+    }
+
+    public void viewUsersAdmin() {
+
+        List<User> list = usr.getAllUsers();
+        int option;
+        long id;
+
+        printUsersList(list);
+        usersListOptions();
+
+        option = scanner.nextInt();
+
+        do {
+            switch (option) {
+                case 1:
+                    System.out.println("Enter first name ");
+                    String fname = scanline();
+
+                    System.out.println("Enter last name ");
+                    String lname= scanline();
+
+                    System.out.println("Enter email ");
+                    String email= scanline();
+
+                    System.out.println("Enter password ");
+                    String password= scanline();
+
+                    System.out.println("Enter role id: 0: Admin, 1: Moderator, 2: Blogger");
+                    int role= scanner.nextInt();
+
+                    usr.addUser(fname, lname, email, password, role);
+                    break;
+
+                case 2:
+                    System.out.println("Enter id of the user to be delete: ");
+                    id= scanner.nextLong();
+                    usr.deleteUser(id);
+                    System.out.printf("%n%n User deleted succesfully");
+                    break;
+
+                case 3:
+                    System.out.println("Enter user id");
+                    id = scanner.nextLong();
+                    int type;
+                    System.out.println("Enter role type: 0 for Admin, 1 for Moderator, 2 for Blogger");
+                    type = scanner.nextInt();
+                    usr.setType(id, type);
+                    System.out.println("Type changed succesfully");
+                    break;
+
+                case 4:
+                    break;
+
+                default:
+                    System.out.println("Enter correct menu option.");
+            }
+            if (option != 4) {
+                usersListOptions();
+                option = scanner.nextInt();
+            }
+
+        } while (option != 4);
+
+    }
+
+    public void viewUsersModerator() {
+
+        List<User> list = usr.getAllUsers();
+        int option;
+        long id;
+
+        printUsersList(list);
+        usersListOptionsModerator();
+
+        option = scanner.nextInt();
+
+        do {
+            switch (option) {
+                case 1:
+                    System.out.println("Enter first name ");
+                    String fname = scanline();
+
+                    System.out.println("Enter last name ");
+                    String lname= scanline();
+
+                    System.out.println("Enter email ");
+                    String email= scanline();
+
+                    System.out.println("Enter password ");
+                    String password= scanline();
+
+                    usr.addUSer(fname, lname, email, password);
+                    break;
+
+                case 2:
+                    System.out.println("Enter id of the user to be deleted: ");
+                    id= scanner.nextLong();
+
+                    usr.deleteUser(id);
+                    break;
+
+                case 3:
+                    break;
+
+                default:
+                    System.out.println("Enter correct menu option.");
+            }
+            if (option != 3) {
+                usersListOptionsModerator();
+                option = scanner.nextInt();
+            }
+
+        } while (option != 3);
+
+    }
+
+    public void printUsersList(List<User> list) {
+
+        System.out.printf("%n%n *********** Users: *************** %n%n");
+
+        for(int i=0; i < list.size(); i++) {
+
+            System.out.println("Id: "+list.get(i).getId()+" Email: "+list.get(i).getEmail());
+        }
+        System.out.println("");
+    }
+
+    public void usersListOptions() {
+        System.out.println("Enter options: ");
+        System.out.println("1. Add new user");
+        System.out.println("2. Delete User");
+        System.out.println("3. Change role");
+        System.out.println("4. Return to Home");
+
+    }
+
+    public void usersListOptionsModerator() {
+        System.out.println("Enter options: ");
+        System.out.println("1. Add new user");
+        System.out.println("2. Delete User");
+        System.out.println("3. Return to Home");
 
     }
 
@@ -146,13 +475,13 @@ public class MyBlogAppClient {
                     viewMyPublications();
 
                 case 3:
-                    //writePublication();
+                    writePublication();
 
                 case 4:
-                    //search();
+                    search();
 
                 case 5:
-                    //viewAllPublications();
+                    viewAllPublications();
 
 
                 case 6:
@@ -291,6 +620,41 @@ public class MyBlogAppClient {
 
     }
 
+
+    public void viewAllPublications() {
+
+        List<Publication> list = pub.getAllPublications();
+        int option;
+
+        printPublicationsList(list);
+        publicationsListOptions();
+
+        option = scanner.nextInt();
+
+        do {
+            switch (option) {
+                case 1:
+                    System.out.println("Enter publication id from the list: ");
+                    long id = scanner.nextLong();
+                    viewPublicationAdmin(id);
+                    break;
+
+                case 2:
+                    break;
+
+                default:
+                    System.out.println("Enter correct menu option.");
+            }
+            if (option != 2) {
+                publicationsListOptions();
+                option = scanner.nextInt();
+            }
+
+        } while (option != 2);
+
+    }
+
+
     public void publicationsListOptions() {
         System.out.println("Enter options: ");
         System.out.println("1. View Publication by id");
@@ -307,6 +671,66 @@ public class MyBlogAppClient {
             System.out.println("Id: "+list.get(i).getId()+" Title: "+list.get(i).getTitle());
         }
         System.out.println("");
+    }
+
+
+    public void viewPublicationAdmin(long id) {
+
+        Publication publication = pub.getPublicationById(id);
+
+        int option;
+
+        printPublication(publication);
+
+        printPublicationOptionsAdmin();
+
+        option = scanner.nextInt();
+
+        do {
+            switch (option) {
+
+                case 1:
+                    //delete publication
+                    System.out.printf("%nAre you sure you want to delete this? Enter (1) for Yes, (2) for No %n");
+                    int choice = scanner.nextInt();
+
+                    if(choice == 1) {
+                        pub.deletePublication(id, usr.getCurrUser());
+                        usr.getCurrUser().getPublications().remove(publication);
+                        option = 4; // this publication is now deleted, return to previous menu
+                    }
+                    break;
+
+                case 2:
+                    // like publication
+                    if(usr.getCurrUser().getLikedPubs().contains(id)) {
+                        System.out.println("You have already liked this !");
+                    } else {
+                        publication.incrementLikes();
+                        usr.getCurrUser().addLiked_pubs(id);
+                        System.out.println("Publication liked !");
+                    }
+
+                case 3:
+                    // View comments;
+                    viewComments(id);
+                    printPublication(publication);
+
+
+                case 4:
+                    // return to prev menu
+                    break;
+
+                default:
+                    System.out.printf("%nEnter correct menu option.%n");
+            }
+            if (option != 4) {
+                printPublicationOptions();
+                option = scanner.nextInt();
+            }
+
+        } while (option != 4);
+
     }
 
     public void viewPublication(long id) {
@@ -411,14 +835,24 @@ public class MyBlogAppClient {
 
     }
 
+    public void printPublicationOptionsAdmin() {
+
+        System.out.printf("%n ________Enter options:_______ ");
+        System.out.println("1. Delete Publication");
+        System.out.println("2. Like Publication");
+        System.out.println("3. View comments ");
+        System.out.printf("4. Return to previous Menu %n");
+
+    }
+
     public void printPublicationOptions() {
 
         System.out.printf("%n ________Enter options:_______ ");
         System.out.println("1. Update Publication");
         System.out.println("2. Delete Publication");
-        System.out.println("3. View comments ");
-        System.out.println("4. Add co-author");
-        System.out.println("5. Like Publication");
+        System.out.println("3.. Like Publication");
+        System.out.println("4. View comments ");
+        System.out.println("5. Add co-author");
         System.out.printf("6. Return to previous Menu %n");
 
     }
@@ -503,6 +937,73 @@ public class MyBlogAppClient {
         System.out.println("2. Delete comment");
         System.out.println("3. Update comment ");
         System.out.println("4. Return to previous menu");
+
+    }
+
+
+    public void writePublication() {
+        System.out.printf("********************************** New Publication ******************************** %n%n");
+        System.out.println("Enter title of the Publication:");
+        String title = scanline();
+        PublicationType type;
+        int option;
+        System.out.println("Specify Type:");
+        for(int i=0; i < PublicationType.values().length; i++) {
+            System.out.printf(" ("+i+") for "+PublicationType.values()[i]);
+        }
+        System.out.println("");
+        option = scanner.nextInt();
+        type = PublicationType.values()[option];
+        System.out.println("Enter publication body: ");
+        String body = scanline();
+        Date dt = new Date();
+
+        Publication publication = new Publication(title, body, usr.getCurrUser(), dt, type);
+        pub.addPublication(publication);
+        usr.getCurrUser().addPublications(publication);
+
+    }
+
+    public void search() {
+
+        List<Publication> pubList;
+        System.out.printf("%n Enter keyword to search: ");
+        String key= scanline();
+        System.out.println("Enter options: %n(1) to search from content, %n(2) to search from authors%n");
+
+        int option = scanner.nextInt();
+
+
+        if(option == 1)
+           pubList = pub.searchContent(key);
+        else
+            pubList = pub.searchAuthor(key);
+
+        printPublicationsList(pubList);
+        publicationsListOptions();
+
+        option = scanner.nextInt();
+
+        do {
+            switch (option) {
+                case 1:
+                    System.out.println("Enter publication id from the list: ");
+                    long id = scanner.nextLong();
+                    printPublication(pub.getPublicationById(id));
+                    break;
+
+                case 2:
+                    break;
+
+                default:
+                    System.out.println("Enter correct menu option.");
+            }
+            if (option != 2) {
+                publicationsListOptions();
+                option = scanner.nextInt();
+            }
+
+        } while (option != 2);
 
     }
 

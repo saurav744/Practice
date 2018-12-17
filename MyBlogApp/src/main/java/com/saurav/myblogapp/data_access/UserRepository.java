@@ -4,8 +4,7 @@ import com.saurav.myblogapp.control.model.User;
 import com.saurav.myblogapp.control.model.UserType;
 import com.saurav.myblogapp.exceptions.UserNotFoundException;
 
-import java.util.Map;
-import java.util.Set;
+import java.util.ArrayList;
 
 public interface UserRepository {
 
@@ -26,6 +25,6 @@ public interface UserRepository {
 
     public boolean hasUserId(long id);
 
-    public Set<Map.Entry<Long, User>> getAllUsers();
+    public ArrayList<User> getAllUsers();
 
 }

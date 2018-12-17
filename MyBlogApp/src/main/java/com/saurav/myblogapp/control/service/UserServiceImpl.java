@@ -5,8 +5,7 @@ import com.saurav.myblogapp.control.model.UserType;
 import com.saurav.myblogapp.data_access.UserRepository;
 import com.saurav.myblogapp.exceptions.UserNotFoundException;
 
-import java.util.Map;
-import java.util.Set;
+import java.util.ArrayList;
 
 public class UserServiceImpl implements UserService {
 
@@ -76,6 +75,14 @@ public class UserServiceImpl implements UserService {
         }
     }
 
+
+    @Override
+    public void addUSer(String firstname, String lastname, String email, String password) {
+
+        addUser(firstname, lastname, email, password, 2);
+
+    }
+
     @Override
     public void deleteUser(long id) {
 
@@ -83,6 +90,15 @@ public class UserServiceImpl implements UserService {
         if(currUser != null && (currUser.getType() == UserType.ADMIN || currUser.getEmail().equalsIgnoreCase(user.getEmail()))) {
 
             userRepository.deleteUser(id);
+        }
+
+        else if (currUser != null && currUser.getType() == UserType.MODERATOR) {
+
+            if(user.getType() == UserType.BLOGGER)
+                userRepository.deleteUser(id);
+            else
+                System.out.println("A moderator cannot delete other admin or moderators");
+
         }
 
     }
@@ -118,7 +134,19 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void setType(long id, UserType type) {
+    public void setType(long id, int type) {
+
+        UserType userType;
+        if (type == 0)
+            userType = UserType.ADMIN;
+        else if(type ==1)
+            userType = UserType.MODERATOR;
+        else
+            userType = UserType.BLOGGER;
+
+        if(currUser.getType() == UserType.ADMIN) {
+            userRepository.setType(id, userType);
+        }
 
     }
 
@@ -138,7 +166,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Set<Map.Entry<Long, User>> getAllUsers() {
+    public ArrayList<User> getAllUsers() {
         return userRepository.getAllUsers() ;
     }
 }

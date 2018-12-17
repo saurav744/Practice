@@ -4,10 +4,10 @@ import com.saurav.myblogapp.control.model.Publication;
 import com.saurav.myblogapp.control.model.PublicationState;
 import com.saurav.myblogapp.control.model.User;
 import com.saurav.myblogapp.control.model.UserComment;
+import com.saurav.myblogapp.exceptions.PublicationNotFoundException;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
 public interface PublicationService {
 
@@ -15,7 +15,7 @@ public interface PublicationService {
 
     public void deletePublication(long id, User user);
 
-    public void updatePublication(long id, String body, String title, User curr_user);
+    public void updatePublication(long id, String body, String title, User curr_user) throws PublicationNotFoundException;
 
     //public List<Publication> getPublications(User author);
 
@@ -25,7 +25,9 @@ public interface PublicationService {
 
     public void approvePublication(long id, User curr_user);
 
-    public Set<Map.Entry<Long, Publication>> getAllPublications();
+    public ArrayList<Publication> getAllPublications();
+
+    public ArrayList<Publication> getPending();
 
     public boolean isAuthor(User user, long id);
 
@@ -36,6 +38,10 @@ public interface PublicationService {
     public List<UserComment> getComments(long id);
 
     public void deleteComment (long id, int index);
+
+    public List<Publication> searchContent(String key);
+
+    public List<Publication> searchAuthor(String key);
 
 }
 

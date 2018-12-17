@@ -4,9 +4,8 @@ import com.saurav.myblogapp.control.model.Publication;
 import com.saurav.myblogapp.control.model.PublicationState;
 import com.saurav.myblogapp.control.model.UserComment;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
 public interface PublicationRepository {
 
@@ -24,7 +23,9 @@ public interface PublicationRepository {
 
     public void removePending (long id);
 
-    public Set<Map.Entry<Long, Publication>> getAllPublications();
+    public ArrayList<Publication> getAllPublications();
+
+    public ArrayList<Publication> getPending();
 
     public void addToApproved(long id, Publication publication);
 
@@ -35,5 +36,9 @@ public interface PublicationRepository {
     public void editComment (long id, int index, String body);
 
     public List<UserComment> getComments(long id);
+
+    public List<Publication> searchContent(String key);
+
+    public List<Publication> searchAuthor(String key);
 
 }

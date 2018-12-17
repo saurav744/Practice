@@ -2,10 +2,10 @@ package com.saurav.myblogapp.control.service;
 
 import com.saurav.myblogapp.control.model.*;
 import com.saurav.myblogapp.data_access.PublicationRepository;
+import com.saurav.myblogapp.exceptions.PublicationNotFoundException;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
 public class PublicationServiceImpl implements PublicationService {
 
@@ -41,7 +41,7 @@ public class PublicationServiceImpl implements PublicationService {
     }
 
     @Override
-    public void updatePublication(long id, String body, String title, User curr_user) {
+    public void updatePublication(long id, String body, String title, User curr_user) throws PublicationNotFoundException {
 
         Publication pub = getPublicationById(id);
         if(isAuthor(curr_user,id))
@@ -66,6 +66,11 @@ public class PublicationServiceImpl implements PublicationService {
     }
 
     @Override
+    public ArrayList<Publication> getPending() {
+        return publicationRepository.getPending();
+    }
+
+    @Override
     public void approvePublication(long id, User curr_user) {
 
         if(curr_user.getType() == UserType.ADMIN || curr_user.getType() == UserType.MODERATOR ) {
@@ -76,6 +81,16 @@ public class PublicationServiceImpl implements PublicationService {
             publicationRepository.removePending(id);
 
         }
+    }
+
+    @Override
+    public List<Publication> searchContent(String key) {
+        return publicationRepository.searchContent(key);
+    }
+
+    @Override
+    public List<Publication> searchAuthor(String key) {
+        return publicationRepository.searchAuthor(key);
     }
 
     @Override
@@ -93,7 +108,7 @@ public class PublicationServiceImpl implements PublicationService {
     }
 
     @Override
-    public Set<Map.Entry<Long, Publication>> getAllPublications() {
+    public ArrayList<Publication> getAllPublications() {
         return publicationRepository.getAllPublications();
     }
 

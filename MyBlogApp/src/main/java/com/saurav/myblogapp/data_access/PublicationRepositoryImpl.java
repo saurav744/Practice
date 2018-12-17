@@ -2,12 +2,10 @@ package com.saurav.myblogapp.data_access;
 
 import com.saurav.myblogapp.control.model.Publication;
 import com.saurav.myblogapp.control.model.PublicationState;
+import com.saurav.myblogapp.control.model.User;
 import com.saurav.myblogapp.control.model.UserComment;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class PublicationRepositoryImpl implements PublicationRepository {
 
@@ -41,6 +39,14 @@ public class PublicationRepositoryImpl implements PublicationRepository {
 
         else if(pending.containsKey(id))
             pending.remove(id);
+
+    }
+
+    @Override
+    public ArrayList<Publication> getPending() {
+
+        ArrayList<Publication> pubList = new ArrayList<Publication>(pending.values());
+        return pubList;
 
     }
 
@@ -109,7 +115,42 @@ public class PublicationRepositoryImpl implements PublicationRepository {
     }
 
     @Override
-    public Set<Map.Entry<Long, Publication>> getAllPublications() {
-        return publications.entrySet();
+    public List<Publication> searchContent(String key) {
+        List<Publication> pubList = new ArrayList<>();
+
+        Iterator pbIterator = publications.entrySet().iterator();
+
+        while (pbIterator.hasNext()) {
+            Map.Entry mapElement = (Map.Entry)pbIterator.next();
+            Publication pub = (Publication)mapElement.getValue();
+            if(pub.getBody().contains(key) || pub.getTitle().contains(key))
+                pubList.add(pub);
+        }
+        return pubList;
+    }
+
+    @Override
+    public List<Publication> searchAuthor(String key) {
+        List<Publication> pubList = new ArrayList<>();
+
+        Iterator pbIterator = publications.entrySet().iterator();
+
+        while (pbIterator.hasNext()) {
+            Map.Entry mapElement = (Map.Entry)pbIterator.next();
+
+            Publication pub = (Publication)mapElement.getValue();
+            for(User usr : pub.getAuthors()) {
+                if(usr.getFirstName().contains(key) || usr.getLastName().contains(key))
+                    pubList.add(pub);
+            }
+
+        }
+        return null;
+    }
+
+    @Override
+    public ArrayList<Publication> getAllPublications() {
+        ArrayList<Publication> pubList = new ArrayList<Publication>(publications.values());
+        return pubList;
     }
 }
