@@ -5,6 +5,7 @@ import com.saurav.myblogapp.control.service.PublicationService;
 import com.saurav.myblogapp.control.service.PublicationServiceFactory;
 import com.saurav.myblogapp.control.service.UserService;
 import com.saurav.myblogapp.control.service.UserServiceFactory;
+import com.saurav.myblogapp.exceptions.PublicationNotFoundException;
 import com.saurav.myblogapp.exceptions.UserNotFoundException;
 
 import java.util.ArrayList;
@@ -764,7 +765,11 @@ public class MyBlogAppClient {
                         newBody = scanline();
                     } else newBody = publication.getBody();
 
-                    pub.updatePublication(id, newBody, newTitle, usr.getCurrUser());
+                    try {
+                        pub.updatePublication(id, newBody, newTitle, usr.getCurrUser());
+                    } catch (PublicationNotFoundException e) {
+                        e.printStackTrace();
+                    }
 
                     printPublication(publication);
                     break;

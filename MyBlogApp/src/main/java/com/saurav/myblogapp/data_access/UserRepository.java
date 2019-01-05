@@ -12,7 +12,6 @@ public interface UserRepository {
 
     public void deleteUser(long id);
 
-//    public void updateUser(long id, User user) throws UserNotFoundException;
     public void updateUser(long id, String firstName, String lastName, String password) throws UserNotFoundException;
 
     public User getUser(String email);

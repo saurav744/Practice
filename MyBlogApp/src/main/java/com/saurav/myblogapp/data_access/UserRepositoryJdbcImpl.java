@@ -1,19 +1,22 @@
 package com.saurav.myblogapp.data_access;
 
 import com.saurav.myblogapp.control.model.User;
+import com.saurav.myblogapp.control.model.UserType;
+import com.saurav.myblogapp.exceptions.UserNotFoundException;
 
 import java.sql.*;
+import java.util.ArrayList;
 
-public class UserRepositoryJdbcImpl {
+public class UserRepositoryJdbcImpl implements UserRepository {
 
     static String DRIVER = "com.mysql.jdbc.Driver";
     static String CONNECTION_URL = "jdbc:mysql://localhost/blog";
     static String USERNAME = "root";
     static String PASSWORD = "root";
 
-    public static int createUser(User user) {
+    @Override
+    public void addUser(User user) {
 
-        int result = 0;
         try {
             Connection connection=getConnection();
             PreparedStatement ps=connection.prepareStatement("INSERT INTO USERS (FIRST_NAME, LAST_NAME, EMAIL, ROLE, PASSWORD)\n" +
@@ -23,15 +26,17 @@ public class UserRepositoryJdbcImpl {
             ps.setString(3,user.getEmail());
             ps.setString(4,user.getType().toString());
             ps.setString(5,user.getPassword());
-            result = ps.executeUpdate();
-        } catch (Exception e) {
+            ps.executeUpdate();
+        } catch (SQLException e) {
 
         }
-        return result;
     }
-    public static User getUser(String email) {
+
+    @Override
+    public User getUser(String email) {
 
         ResultSet rs = null;
+        User user = null;
         try {
             Statement stmt=null;
             Connection connection=getConnection();
@@ -39,44 +44,84 @@ public class UserRepositoryJdbcImpl {
             PreparedStatement ps=connection.prepareStatement("select * from USERS where EMAIL=?");
             ps.setString(1,email);
             rs = ps.executeQuery();
-        } catch (Exception e) {
+
+            user = new User(rs.getString(0), rs.getString(1), rs.getString(2), rs.getString(3), UserType.valueOf(rs.getString(4)));
+
+        } catch (SQLException e) {
 
         }
 
-
-        User user = new User(rs.getString(0), rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4));
-
-
         return user;
     }
-    public static int updateUser(long id, String firstname, String lastname, String password) {
 
-        int result = 0;
+    @Override
+    public void updateUser(long id, String firstname, String lastname, String password) throws UserNotFoundException {
+
         try {
             Connection connection=getConnection();
             PreparedStatement ps=connection.prepareStatement("UPDATE USERS SET FIRST_NAME = ?, LAST_NAME = ?, PASSWORD = ? WHERE id=?");
             ps.setString(1, firstname);
             ps.setString(2, lastname);
-            ps.setString(3,password);
-            ps.setString(4, id);
-            result = ps.executeUpdate();
-        } catch (Exception e) {
+            ps.setString(3, password);
+            ps.setString(4, Long.toString(id));
+            ps.executeUpdate();
+        } catch (SQLException e) {
 
         }
-        return result;
     }
-    public static int deleteUser(long id) {
 
-        int result = 0;
+    @Override
+    public void deleteUser(long id) {
+
         try {
             Connection connection=getConnection();
             PreparedStatement ps=connection.prepareStatement("DELETE * FROM USERS WHERE id=?");
-            ps.setString(1, id);
-            result = ps.executeUpdate();
-        } catch (Exception e) {
+            ps.setString(1, Long.toString(id));
+            ps.executeUpdate();
+        } catch (SQLException e) {
+        }
+    }
+
+    @Override
+    public User getUserById(long id) {
+
+        ResultSet rs = null;
+        User user = null;
+        try {
+            Statement stmt=null;
+            Connection connection=getConnection();
+            stmt = connection.createStatement();
+            PreparedStatement ps=connection.prepareStatement("select * from USERS where ID=?");
+            ps.setString(1, Long.toString(id));
+            rs = ps.executeQuery();
+
+            user = new User(rs.getString(0), rs.getString(1), rs.getString(2), rs.getString(3), UserType.valueOf(rs.getString(4)));
+
+        } catch (SQLException e) {
 
         }
-        return result;
+
+        return user;
+    }
+
+    @Override
+    public void setType(long id, UserType type) {
+
+    }
+
+    @Override
+    public boolean hasUser(String email) {
+        return false;
+    }
+
+    @Override
+    public boolean hasUserId(long id) {
+        return false;
+    }
+
+    @Override
+    public ArrayList<User> getAllUsers() {
+        return null;
     }
 
     public static Connection getConnection() {

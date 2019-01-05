@@ -27,23 +27,23 @@ public class TableCreator {
 
             //SQL for creating table
             String sql = "CREATE TABLE USERS "
-                    + "(ID INT NOT NULL AUTO_INCREMENT"
+                    + "(ID INT NOT NULL AUTO_INCREMENT,"
                     + "FIRST_NAME VARCHAR(255), "
                     + "LAST_NAME VARCHAR(255), "
                     + "EMAIL VARCHAR(255), "
                     + " ROLE VARCHAR(255), "
                     + " PASSWORD VARCHAR(255), "
-                    + " PRIMARY KEY ( ID ))";
+                    + " PRIMARY KEY (ID))";
             //Execute sql
-            stmt.executeUpdate(sql);
+            stmt.execute(sql);
             
             //SQL to create admin
-            sql = "Insert into REGISTERED_USERS (FIRST_NAME, LAST_NAME, EMAIL, ROLE, PASSWORD) VALUES ('Saurav', 'Sharma', 'saurav61289@gmail.com','admin', 'admin')";
+            sql = "Insert into USERS (FIRST_NAME, LAST_NAME, EMAIL, ROLE, PASSWORD) VALUES ('Saurav', 'Sharma', 'saurav61289@gmail.com','admin', 'admin')";
             //Execute sql
             stmt.executeUpdate(sql);
 
             sql = "CREATE TABLE PUBLICATIONS"
-                    +"(ID INT NOT NULL AUTO_INCREMENT"
+                    +"(ID INT NOT NULL AUTO_INCREMENT,"
                     +"TITLE VARCHAR(255),"
                     +"BODY VARCHAR(4096),"
                     +"TYPE VARCHAR(255),"

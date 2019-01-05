@@ -3,19 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="c6de309f-d7d0-4d66-83d1-ba1e52b2b7c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/PublicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/PublicationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/PublicationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/PublicationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/PublicationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/PublicationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/PublicationRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/PublicationRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/TableCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/TableCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepositoryJdbcImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepositoryJdbcImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepositoryJdbcImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/presentation/MyBlogAppClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/presentation/MyBlogAppClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/saurav/myblogapp/control/service/PublicationServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saurav/myblogapp/control/service/PublicationServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/service/PublicationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/service/PublicationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/service/PublicationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/service/PublicationServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/data_access/PublicationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/data_access/PublicationRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/data_access/PublicationRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/data_access/PublicationRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/data_access/TableCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/data_access/TableCreator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/data_access/UserManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/data_access/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/data_access/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/data_access/UserRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/data_access/UserRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/presentation/MyBlogAppClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/presentation/MyBlogAppClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/saurav/myblogapp/control/service/PublicationServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/saurav/myblogapp/control/service/PublicationServiceImplTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,82 +35,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/PublicationServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepositoryImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="56" column="60" lean-forward="true" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/Publication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="56" column="28" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepositoryJdbcImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
-              <caret line="83" column="13" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/saurav/myblogapp/control/service/PublicationServiceImplTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="692">
-              <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/exceptions/UserNotFoundException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="7" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/exceptions/PublicationNotFoundException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/saurav/myblogapp/control/service/UserServiceImplTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="24" column="84" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="657">
-              <caret line="126" column="45" lean-forward="true" selection-start-line="126" selection-start-column="45" selection-end-line="126" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/PublicationService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+            <state relative-caret-position="855">
+              <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -115,7 +47,34 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/User.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="975">
-              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepositoryJdbcImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/TableCreator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="750">
+              <caret line="53" column="36" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -169,18 +128,18 @@
         <option value="$PROJECT_DIR$/src/test/java/com/saurav/myblogapp/control/service/UserServiceImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/PublicationRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/PublicationRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/presentation/MyBlogAppClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/TableCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepositoryJdbcImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/exceptions/PublicationNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/PublicationServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/PublicationService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/saurav/myblogapp/control/service/PublicationServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/presentation/MyBlogAppClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/TableCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepositoryJdbcImpl.java" />
       </list>
     </option>
   </component>
@@ -198,8 +157,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -289,27 +248,6 @@
               <item name="myblogapp" type="462c0819:PsiDirectoryNode" />
               <item name="presentation" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MyBlogApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBlogApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyBlogApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBlogApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyBlogApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBlogApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -317,7 +255,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545037135919" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546697613998" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -335,7 +273,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceImplTest">
+  <component name="RunManager" selected="Application.TableCreator">
+    <configuration name="TableCreator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.saurav.myblogapp.data_access.TableCreator" />
+      <module name="MyBlogApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.saurav.myblogapp.data_access.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBlogApp" />
       <extension name="coverage">
@@ -346,22 +297,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.saurav.myblogapp.control.service" />
       <option name="MAIN_CLASS_NAME" value="com.saurav.myblogapp.control.service.UserServiceImplTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceImplTest.test001" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MyBlogApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.saurav.myblogapp.control.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.saurav.myblogapp.control.service" />
-      <option name="MAIN_CLASS_NAME" value="com.saurav.myblogapp.control.service.UserServiceImplTest" />
-      <option name="METHOD_NAME" value="test001" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -416,11 +351,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TableCreator" />
         <item itemvalue="JUnit.UserServiceImplTest" />
         <item itemvalue="JUnit.UserServiceImplTest.testUpdateUser_003" />
         <item itemvalue="JUnit.UserServiceImplTest.test002_updateUser" />
         <item itemvalue="JUnit.UserServiceImplTest.test001_addUser" />
-        <item itemvalue="JUnit.UserServiceImplTest.test001" />
       </list>
     </recent_temporary>
   </component>
@@ -470,10 +405,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="68" y="-11" width="1853" height="1092" extended-state="6" />
+    <frame x="69" y="-4" width="1851" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20443213" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2132964" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -484,7 +419,7 @@
       <window_info anchor="bottom" id="Messages" order="0" weight="0.3291536" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3291536" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.22361547" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.48589343" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39916405" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -522,13 +457,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/UserServiceFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/lang/Exception.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-182">
@@ -538,13 +466,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/util/Constants.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/util/ConnectionHandler.java" />
-    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.sql/java/sql/Statement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="534">
@@ -553,52 +474,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/JdbcUserRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/UserComment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/UserType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/PublicationServiceFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/PublicationState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepositoryFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="242" column="6" selection-start-line="242" selection-start-column="6" selection-end-line="242" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.sql/java/sql/ResultSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2946">
-          <caret line="213" column="67" lean-forward="true" selection-start-line="213" selection-start-column="67" selection-end-line="213" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -609,10 +488,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/PublicationType.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/saurav/myblogapp/control/service/PublicationServiceImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        <state relative-caret-position="1020">
+          <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/saurav/myblogapp/control/service/UserServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="84" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.sql/java/sql/ResultSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="237" column="11" selection-start-line="237" selection-start-column="11" selection-end-line="237" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.sql/java/sql/PreparedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="236" column="9" selection-start-line="236" selection-start-column="9" selection-end-line="236" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -623,31 +523,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/PublicationRepositoryFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepositoryFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="90">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/UserServiceFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/PublicationRepositoryImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/PublicationServiceFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="126" column="33" lean-forward="true" selection-start-line="126" selection-start-column="33" selection-end-line="126" selection-end-column="33" />
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/presentation/MyBlogAppClient.java">
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.sql/java/sql/Statement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7318">
-          <caret line="410" column="13" lean-forward="true" selection-start-line="410" selection-start-column="13" selection-end-line="410" selection-end-column="13" />
+        <state relative-caret-position="460">
+          <caret line="357" column="12" selection-start-line="357" selection-start-column="12" selection-end-line="357" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -658,17 +558,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/TableCreator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/PublicationRepositoryFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="42" lean-forward="true" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepositoryImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/PublicationRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+        <state relative-caret-position="362">
+          <caret line="126" column="33" lean-forward="true" selection-start-line="126" selection-start-column="33" selection-end-line="126" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/UserType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/PublicationType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/UserComment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/PublicationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/PublicationState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/PublicationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="56" column="60" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -679,10 +621,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="126" column="45" selection-start-line="126" selection-start-column="45" selection-end-line="126" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="975">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/exceptions/PublicationNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/exceptions/UserNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="7" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -693,59 +656,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/presentation/MyBlogAppClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="126" column="45" lean-forward="true" selection-start-line="126" selection-start-column="45" selection-end-line="126" selection-end-column="45" />
+        <state relative-caret-position="874">
+          <caret line="770" column="44" selection-start-line="770" selection-start-column="44" selection-end-line="770" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/PublicationService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        <state relative-caret-position="855">
+          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/PublicationServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="56" column="60" lean-forward="true" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/exceptions/PublicationNotFoundException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/TableCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/exceptions/UserNotFoundException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/saurav/myblogapp/control/service/UserServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="24" column="84" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/saurav/myblogapp/control/service/PublicationServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+        <state relative-caret-position="750">
+          <caret line="53" column="36" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepositoryJdbcImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="83" column="13" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
+        <state relative-caret-position="212">
+          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
         </state>
       </provider>
     </entry>
