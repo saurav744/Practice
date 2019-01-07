@@ -69,7 +69,7 @@ public class MyBlogAppClient {
                     }
 
                     else if (type == UserType.NOT_EXISTS) {
-                        System.out.println("User does not exists");
+                        System.out.println("User does not exist");
                     }
 
                     else if (type == UserType.ADMIN)
@@ -117,7 +117,6 @@ public class MyBlogAppClient {
             switch (option) {
 
                 case 1:
-
                     viewMyProfile();
                     break;
 
@@ -704,13 +703,13 @@ public class MyBlogAppClient {
 
                 case 2:
                     // like publication
-                    if(usr.getCurrUser().getLikedPubs().contains(id)) {
-                        System.out.println("You have already liked this !");
-                    } else {
-                        publication.incrementLikes();
-                        usr.getCurrUser().addLiked_pubs(id);
-                        System.out.println("Publication liked !");
-                    }
+//                    if(usr.getCurrUser().getLikedPubs().contains(id)) {
+//                        System.out.println("You have already liked this !");
+//                    } else {
+//                        publication.incrementLikes();
+//                        usr.getCurrUser().addLiked_pubs(id);
+//                        System.out.println("Publication liked !");
+//                    }
 
                 case 3:
                     // View comments;
@@ -788,13 +787,13 @@ public class MyBlogAppClient {
 
                 case 3:
                     // like publication
-                    if(usr.getCurrUser().getLikedPubs().contains(id)) {
-                        System.out.println("You have already liked this !");
-                    } else {
-                        publication.incrementLikes();
-                        usr.getCurrUser().addLiked_pubs(id);
-                        System.out.println("Publication liked !");
-                    }
+//                    if(usr.getCurrUser().getLikedPubs().contains(id)) {
+//                        System.out.println("You have already liked this !");
+//                    } else {
+//                        publication.incrementLikes();
+//                        usr.getCurrUser().addLiked_pubs(id);
+//                        System.out.println("Publication liked !");
+//                    }
 
                 case 4:
                     // View comments;

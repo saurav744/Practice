@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class UserRepositoryImpl implements UserRepository  {
+public class UserRepositoryImpl implements UserRepositoryold {
 
     private Map<Long, User> usersId = new HashMap<>();
     private Map<String, User> usersEmail = new HashMap<>();
@@ -27,8 +27,8 @@ public class UserRepositoryImpl implements UserRepository  {
         next_id++;
     }
 
-    @Override
-    public  void addUser(User user) {
+   
+    public void addUser(User user) {
 
         user.setId(next_id);
         usersId.put(next_id,user);
@@ -36,7 +36,7 @@ public class UserRepositoryImpl implements UserRepository  {
         next_id++;
     }
 
-    @Override
+   
     public void deleteUser(long id) {
 
         User user= getUserById(id);
@@ -44,7 +44,7 @@ public class UserRepositoryImpl implements UserRepository  {
         usersId.remove(id);
     }
 
-    @Override
+
     public void updateUser(long id, String firstName, String lastName, String password) throws UserNotFoundException {
 
         User user_old= getUserById(id);
@@ -57,36 +57,36 @@ public class UserRepositoryImpl implements UserRepository  {
         }
     }
 
-    @Override
+   
     public User getUser(String email) {
 
         return usersEmail.get(email);
     }
 
-    @Override
+    
     public User getUserById(long id) {
 
         return usersId.get(id);
     }
 
-    @Override
+   
     public void setType(long id, UserType type) {
         User user= getUserById(id);
         user.setType(type);
     }
 
-    @Override
+   
     public boolean hasUser(String email) {
 
         return usersEmail.containsKey(email);
     }
 
-    @Override
+   
     public boolean hasUserId(long id) {
         return usersId.containsKey(id);
     }
 
-    @Override
+    
     public ArrayList<User> getAllUsers() {
         ArrayList<User> usersList = new ArrayList<>(usersId.values());
         return usersList;

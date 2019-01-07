@@ -1,7 +1,7 @@
 package com.saurav.myblogapp.control.service;
 
 import com.saurav.myblogapp.control.model.*;
-import com.saurav.myblogapp.data_access.PublicationRepository;
+import com.saurav.myblogapp.data_access.PublicationRepositoryold;
 import com.saurav.myblogapp.exceptions.PublicationNotFoundException;
 
 import java.util.ArrayList;
@@ -9,9 +9,9 @@ import java.util.List;
 
 public class PublicationServiceImpl implements PublicationService {
 
-    private PublicationRepository publicationRepository;
+    private PublicationRepositoryold publicationRepository;
 
-    public PublicationServiceImpl(PublicationRepository publicationRepository) {
+    public PublicationServiceImpl(PublicationRepositoryold publicationRepository) {
 
         this.publicationRepository = publicationRepository;
     }

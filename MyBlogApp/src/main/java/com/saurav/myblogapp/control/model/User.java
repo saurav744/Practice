@@ -3,16 +3,30 @@ package com.saurav.myblogapp.control.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class User {
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.JoinColumn;
 
+@Entity
+public class User {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String firstName;
     private String lastName;
     private String email;
     private String password;
     private UserType type;
+    
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "user_publications", joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "publication_id", referencedColumnName = "id"))
     private List<Publication> publications;
-    private List<Long> likedPubs;
+   // private List<Long> likedPubs;
 
     public User(String firstName, String lastName, String email, String password) {
 
@@ -27,7 +41,7 @@ public class User {
         this.password = password;
         this.type = type;
         this.publications = new ArrayList<>();
-        this.likedPubs = new ArrayList<>();
+      //  this.likedPubs = new ArrayList<>();
     }
 
     @Override
@@ -96,13 +110,13 @@ public class User {
         return type;
     }
 
-    public List<Long> getLikedPubs() {
-        return likedPubs;
-    }
+//    public List<Long> getLikedPubs() {
+//        return likedPubs;
+//    }
 
-    public void addLiked_pubs(Long id) {
-        this.likedPubs.add(id);
-    }
+//    public void addLiked_pubs(Long id) {
+//        this.likedPubs.add(id);
+//    }
 
     public List<Publication> getPublications() {
         return publications;

@@ -2,12 +2,27 @@ package com.saurav.myblogapp.control.model;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
+
+@Entity
 public class UserComment {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
     private String id;
     private String body;
     private Date addedDate;
+    @OneToOne(mappedBy = "id")
     private User user;
+    @ManyToOne
+    @JoinColumn(name = "id")
+    private Publication publication;
 
     public UserComment(String body, User user, Date date) {
         this.body = body;
@@ -34,5 +49,13 @@ public class UserComment {
     public User getUser() {
         return user;
     }
+
+	public Publication getPublication() {
+		return publication;
+	}
+
+	public void setPublication(Publication publication) {
+		this.publication = publication;
+	}
 
 }

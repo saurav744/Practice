@@ -4,16 +4,29 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
+
+@Entity
 public class Publication {
 
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private long id;
     private String title;
     private String body;
     private long likes;
     private Date added_date;
-    private long id;
     private PublicationState state;
     private PublicationType type;
+    
+    @ManyToMany(mappedBy = "publications")
     private List<User> authors;
+    @OneToMany(mappedBy = "publication")
     private List<UserComment> comments;
 
 

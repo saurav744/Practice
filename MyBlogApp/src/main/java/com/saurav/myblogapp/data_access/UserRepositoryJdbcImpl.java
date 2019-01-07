@@ -7,14 +7,14 @@ import com.saurav.myblogapp.exceptions.UserNotFoundException;
 import java.sql.*;
 import java.util.ArrayList;
 
-public class UserRepositoryJdbcImpl implements UserRepository {
+public class UserRepositoryJdbcImpl  {
 
     static String DRIVER = "com.mysql.jdbc.Driver";
     static String CONNECTION_URL = "jdbc:mysql://localhost/blog";
     static String USERNAME = "root";
     static String PASSWORD = "root";
 
-    @Override
+    
     public void addUser(User user) {
 
         try {
@@ -32,7 +32,7 @@ public class UserRepositoryJdbcImpl implements UserRepository {
         }
     }
 
-    @Override
+   
     public User getUser(String email) {
 
         ResultSet rs = null;
@@ -54,7 +54,7 @@ public class UserRepositoryJdbcImpl implements UserRepository {
         return user;
     }
 
-    @Override
+   
     public void updateUser(long id, String firstname, String lastname, String password) throws UserNotFoundException {
 
         try {
@@ -70,7 +70,7 @@ public class UserRepositoryJdbcImpl implements UserRepository {
         }
     }
 
-    @Override
+    
     public void deleteUser(long id) {
 
         try {
@@ -82,7 +82,7 @@ public class UserRepositoryJdbcImpl implements UserRepository {
         }
     }
 
-    @Override
+   
     public User getUserById(long id) {
 
         ResultSet rs = null;
@@ -104,22 +104,22 @@ public class UserRepositoryJdbcImpl implements UserRepository {
         return user;
     }
 
-    @Override
+    
     public void setType(long id, UserType type) {
 
     }
 
-    @Override
+   
     public boolean hasUser(String email) {
         return false;
     }
 
-    @Override
+    
     public boolean hasUserId(long id) {
         return false;
     }
 
-    @Override
+    
     public ArrayList<User> getAllUsers() {
         return null;
     }

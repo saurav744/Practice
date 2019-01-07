@@ -7,7 +7,7 @@ import com.saurav.myblogapp.control.model.UserComment;
 
 import java.util.*;
 
-public class PublicationRepositoryImpl implements PublicationRepository {
+public class PublicationRepositoryImpl implements PublicationRepositoryold {
 
     private Map<Long, Publication> publications = new HashMap<>();
     private Map<Long, Publication> pending = new HashMap<>();

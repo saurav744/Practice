@@ -2,17 +2,17 @@ package com.saurav.myblogapp.control.service;
 
 import com.saurav.myblogapp.control.model.User;
 import com.saurav.myblogapp.control.model.UserType;
-import com.saurav.myblogapp.data_access.UserRepository;
+import com.saurav.myblogapp.data_access.UserRepositoryold;
 import com.saurav.myblogapp.exceptions.UserNotFoundException;
 
 import java.util.ArrayList;
 
 public class UserServiceImpl implements UserService {
 
-    private UserRepository userRepository;
+    private UserRepositoryold userRepository;
     private User currUser;
 
-    public UserServiceImpl(UserRepository userRepository) {
+    public UserServiceImpl(UserRepositoryold userRepository) {
         this.userRepository = userRepository;
         this.currUser = null;
     }
