@@ -16,99 +16,100 @@ import javax.persistence.JoinColumn;
 public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
-    private String firstName;
-    private String lastName;
-    private String email;
-    private String password;
-    private UserType type;
-    
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "user_publications", joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "publication_id", referencedColumnName = "id"))
-    private List<Publication> publications;
-   // private List<Long> likedPubs;
+	private long id;
+	private String firstName;
+	private String lastName;
+	private String email;
+	private String password;
+	private UserType type;
 
-    public User(String firstName, String lastName, String email, String password) {
+	@ManyToMany(cascade = CascadeType.ALL)
+	private List<Publication> publications;
+	// private List<Long> likedPubs;
 
-        this(firstName, lastName, email, password, UserType.BLOGGER);
-    }
+	public User(String firstName, String lastName, String email, String password) {
 
-    public User(String firstName, String lastName, String email, String password, UserType type) {
+		this(firstName, lastName, email, password, UserType.BLOGGER);
+	}
 
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.password = password;
-        this.type = type;
-        this.publications = new ArrayList<>();
-      //  this.likedPubs = new ArrayList<>();
-    }
+	public User() {
+	}
 
-    @Override
-    public int hashCode() {
+	public User(String firstName, String lastName, String email, String password, UserType type) {
 
-        return email.hashCode();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+		this.password = password;
+		this.type = type;
+		this.publications = new ArrayList<>();
+		// this.likedPubs = new ArrayList<>();
+	}
 
-    }
+	@Override
+	public int hashCode() {
 
-    @Override
-    public boolean equals(Object obj) {
+		return email.hashCode();
 
-        if (obj == this){
-            return true;
-        }
-        if (!(obj instanceof User)) {
-            return false;
-        }
+	}
 
-        User user = (User) obj;
-        return user.getEmail().equals(email);
-    }
+	@Override
+	public boolean equals(Object obj) {
 
-    public long getId() {
-        return id;
-    }
+		if (obj == this) {
+			return true;
+		}
+		if (!(obj instanceof User)) {
+			return false;
+		}
 
-    public void setId(long id) {
-        this.id = id;
-    }
+		User user = (User) obj;
+		return user.getEmail().equals(email);
+	}
 
-    public String getFirstName() {
-        return firstName;
-    }
+	public long getId() {
+		return id;
+	}
 
+	public void setId(long id) {
+		this.id = id;
+	}
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
+	public String getFirstName() {
+		return firstName;
+	}
 
-    public String getLastName() {
-        return lastName;
-    }
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
+	public String getLastName() {
+		return lastName;
+	}
 
-    public String getEmail() {
-        return email;
-    }
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+	public String getEmail() {
+		return email;
+	}
 
-    public String getPassword() {
-        return password;
-    }
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
+	public String getPassword() {
+		return password;
+	}
 
-    public UserType getType() {
-        return type;
-    }
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public UserType getType() {
+		return type;
+	}
 
 //    public List<Long> getLikedPubs() {
 //        return likedPubs;
@@ -118,16 +119,16 @@ public class User {
 //        this.likedPubs.add(id);
 //    }
 
-    public List<Publication> getPublications() {
-        return publications;
-    }
+	public List<Publication> getPublications() {
+		return publications;
+	}
 
-    public void addPublications(Publication publication) {
-        this.publications.add(publication);
-    }
+	public void addPublications(Publication publication) {
+		this.publications.add(publication);
+	}
 
-    public void setType(UserType type) {
-        this.type = type;
-    }
+	public void setType(UserType type) {
+		this.type = type;
+	}
 
 }

@@ -24,13 +24,16 @@ public class Publication {
     private PublicationState state;
     private PublicationType type;
     
-    @ManyToMany(mappedBy = "publications")
+    @ManyToMany
     private List<User> authors;
-    @OneToMany(mappedBy = "publication")
+    @OneToMany
     private List<UserComment> comments;
 
 
-    public Publication(String title, String body, User author, Date date, PublicationType type) {
+    public Publication() {
+	}
+
+	public Publication(String title, String body, User author, Date date, PublicationType type) {
         this.title = title;
         this.body = body;
         this.authors = new ArrayList<>();
