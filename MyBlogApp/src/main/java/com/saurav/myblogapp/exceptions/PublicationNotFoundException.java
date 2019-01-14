@@ -2,7 +2,9 @@ package com.saurav.myblogapp.exceptions;
 
 public class PublicationNotFoundException extends Exception {
 
-    @Override
+	private static final long serialVersionUID = 1L;
+
+	@Override
     public String toString() {
         return "Publication not found";
     }

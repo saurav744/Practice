@@ -2,13 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6de309f-d7d0-4d66-83d1-ba1e52b2b7c6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/Publication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/Publication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/UserComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/UserComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/model/Publication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/model/Publication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/model/UserComment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/model/UserComment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/MyBlogApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/model/Publication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/model/PublicationState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/model/PublicationType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/model/UserComment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/model/UserType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/service/PublicationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/service/PublicationServiceFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/service/PublicationServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/service/UserServiceFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/service/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/data_access/PublicationRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/data_access/PublicationRepositoryFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/data_access/PublicationRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/data_access/TableCreator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/data_access/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/data_access/UserRepositoryFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/data_access/UserRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/data_access/UserRepositoryJdbcImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/exceptions/PublicationNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/exceptions/UserNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/presentation/MyBlogAppClient.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,98 +40,7 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepositoryImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/UserComment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/Publication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="72" column="28" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepositoryJdbcImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1440">
-              <caret line="96" selection-start-line="96" selection-end-line="96" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/presentation/MyBlogAppClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8850">
-              <caret line="590" column="41" selection-start-line="590" selection-start-column="41" selection-end-line="590" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -191,100 +118,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="MyBlogApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBlogApp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyBlogApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBlogApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyBlogApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBlogApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyBlogApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBlogApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyBlogApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBlogApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="myblogapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyBlogApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBlogApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="myblogapp" type="462c0819:PsiDirectoryNode" />
-              <item name="control" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyBlogApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBlogApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="myblogapp" type="462c0819:PsiDirectoryNode" />
-              <item name="control" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyBlogApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBlogApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="myblogapp" type="462c0819:PsiDirectoryNode" />
-              <item name="control" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyBlogApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBlogApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="myblogapp" type="462c0819:PsiDirectoryNode" />
-              <item name="data_access" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyBlogApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBlogApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="myblogapp" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyBlogApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBlogApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="myblogapp" type="462c0819:PsiDirectoryNode" />
-              <item name="presentation" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -441,7 +276,7 @@
   <component name="ToolWindowManager">
     <frame x="68" y="-11" width="1853" height="1092" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22049862" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22603878" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -661,6 +496,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -670,8 +512,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/UserComment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        <state relative-caret-position="570">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -691,21 +533,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/Publication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
+        <state relative-caret-position="872">
           <caret line="72" column="28" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepositoryJdbcImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1440">
+        <state relative-caret-position="872">
           <caret line="96" selection-start-line="96" selection-end-line="96" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/presentation/MyBlogAppClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8850">
+        <state relative-caret-position="872">
           <caret line="590" column="41" selection-start-line="590" selection-start-column="41" selection-end-line="590" selection-end-column="41" />
         </state>
       </provider>
@@ -714,13 +556,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
