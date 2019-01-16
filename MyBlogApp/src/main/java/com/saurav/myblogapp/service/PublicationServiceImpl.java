@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.saurav.myblogapp.exceptions.PublicationNotFoundException;
 import com.saurav.myblogapp.model.Publication;
 import com.saurav.myblogapp.model.PublicationState;
 import com.saurav.myblogapp.model.User;
@@ -30,27 +31,35 @@ public class PublicationServiceImpl implements PublicationService {
     }
 
     @Override
-    public void deletePublication(long id) {
+    public void deletePublication(long id) throws PublicationNotFoundException {
+    	
+    	if(!isPresent(id))
+    		throw new PublicationNotFoundException();
 
         publicationRepository.deleteById(id);
     }
 
     @Override
-    public boolean isAuthor(User user, long id) {
+    public boolean isAuthor(User user, long id) throws PublicationNotFoundException {
     	
-    	Publication pub = publicationRepository.getOne(id);
+    	if(!isPresent(id))
+    		throw new PublicationNotFoundException();
+    	
+    	Publication pub = publicationRepository.findById(id).get();
         
-        List<User> authors = pub.getAuthors();
-        if(authors.contains(user)) {
-        	return true;
-        }
-        return false;
+    	return pub.getAuthors().contains(user);
+        
+    }
+    
+    @Override
+    public boolean isPresent(long id) {
+    	return publicationRepository.existsById(id);
     }
 
     @Override
-    public void updatePublication(long id, Publication inputPub) {
+    public void updatePublication(long id, Publication inputPub) throws PublicationNotFoundException {
 
-        if(publicationRepository.findById(id).isPresent()) {
+        if(isPresent(id)) {
         	
         	Publication pub = publicationRepository.findById(id).get();
         	
@@ -64,25 +73,33 @@ public class PublicationServiceImpl implements PublicationService {
         		pub.setType(inputPub.getType());
         	
         	publicationRepository.save(pub); 	
-        }    
+        } else {
+        	throw new PublicationNotFoundException();	
+        }
+        	
     }
 
     @Override
-    public Publication getPublicationById(long id) {
+    public Publication getPublicationById(long id) throws PublicationNotFoundException {
+    	
+    	if(!isPresent(id))
+    		throw new PublicationNotFoundException();
     	
     	Optional<Publication> pub = publicationRepository.findById(id);
     	
-        return pub.orElse(null);
+        return pub.get();
     }
 
     @Override
-    public void changeState(long id, PublicationState state) {
+    public void changeState(long id, PublicationState state) throws PublicationNotFoundException {
     		
-    	 if(publicationRepository.findById(id).isPresent()) {
+    	 if(isPresent(id)) {
          	
          	Publication pub = publicationRepository.findById(id).get();
          	pub.setState(state);
          	publicationRepository.save(pub);	
+         } else {
+        	 throw new PublicationNotFoundException();
          }
     }
 

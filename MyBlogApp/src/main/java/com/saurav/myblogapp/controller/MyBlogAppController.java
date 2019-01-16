@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.saurav.myblogapp.exceptions.PublicationNotFoundException;
+import com.saurav.myblogapp.exceptions.UserNotFoundException;
 import com.saurav.myblogapp.model.Publication;
 import com.saurav.myblogapp.model.User;
 import com.saurav.myblogapp.service.PublicationService;
@@ -25,13 +27,13 @@ public class MyBlogAppController {
 	PublicationService publicationService;
 	
 	@GetMapping("/users/id/{id}")
-	public User getUser(@PathVariable Long id) {
+	public User getUser(@PathVariable Long id) throws UserNotFoundException {
 		
 		return userService.getUserById(id);
 	}
 	
 	@GetMapping("/users/email/{email}")
-	public User getUser(@PathVariable String email) {
+	public User getUser(@PathVariable String email) throws UserNotFoundException {
 		
 		return userService.getUser(email);
 	}
@@ -50,21 +52,21 @@ public class MyBlogAppController {
 	}
 	
 	@PutMapping("/users/{id}")
-	public void updateUser(@PathVariable Long id, @RequestBody User newUser) {
+	public void updateUser(@PathVariable Long id, @RequestBody User newUser) throws UserNotFoundException {
 
 		userService.updateUser(id, newUser);
 	
 	}
 	
 	@DeleteMapping("/users/{id}")
-	public void deleteUser(@PathVariable Long id) {
+	public void deleteUser(@PathVariable Long id) throws UserNotFoundException {
 
 		userService.deleteUser(id);
 	
 	}
 	
 	@GetMapping("/publications/{id}")
-	public Publication getPublication(@PathVariable Long id) {
+	public Publication getPublication(@PathVariable Long id) throws PublicationNotFoundException {
 		
 		return publicationService.getPublicationById(id);
 	}
@@ -76,7 +78,7 @@ public class MyBlogAppController {
 	}
 	
 	@PostMapping("/publications/{userId}")
-	public void createPublication(@RequestBody Publication publication, @PathVariable Long userId) {
+	public void createPublication(@RequestBody Publication publication, @PathVariable Long userId) throws UserNotFoundException {
 		
 		User user= userService.getUserById(userId);
 		publication.addAuthor(user);
@@ -88,14 +90,14 @@ public class MyBlogAppController {
 	}
 	
 	@PutMapping("/publications/{id}")
-	public void updatePublication(@PathVariable Long id, @RequestBody Publication newPub) {
+	public void updatePublication(@PathVariable Long id, @RequestBody Publication newPub) throws PublicationNotFoundException {
 
 		publicationService.updatePublication(id, newPub);
 	
 	}
 	
 	@DeleteMapping("/publications/{id}")
-	public void deletePublication(@PathVariable Long id) {
+	public void deletePublication(@PathVariable Long id) throws PublicationNotFoundException {
 
 		publicationService.deletePublication(id);
 	
