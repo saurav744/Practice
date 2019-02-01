@@ -25,9 +25,9 @@ public class PublicationServiceImpl implements PublicationService {
     }
 
     @Override
-    public void addPublication(Publication publication) {
+    public Publication addPublication(Publication publication) {
 
-        publicationRepository.save(publication);
+        return publicationRepository.save(publication);
     }
 
     @Override

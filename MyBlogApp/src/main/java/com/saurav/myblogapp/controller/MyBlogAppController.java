@@ -19,6 +19,7 @@ import com.saurav.myblogapp.service.PublicationService;
 import com.saurav.myblogapp.service.UserService;
 
 @RestController
+
 public class MyBlogAppController {
 	
 	@Autowired
@@ -80,12 +81,13 @@ public class MyBlogAppController {
 	@PostMapping("/publications/{userId}")
 	public void createPublication(@RequestBody Publication publication, @PathVariable Long userId) throws UserNotFoundException {
 		
-		User user= userService.getUserById(userId);
+		User user = userService.getUserById(userId);
+		
 		publication.addAuthor(user);
+		//Publication pub = publicationService.addPublication(publication);
 		user.addPublications(publication);
-
+		//userService.updateUser(userId, user);
 		publicationService.addPublication(publication);
-		//userService.updateUser(userId, user);	
 	
 	}
 	

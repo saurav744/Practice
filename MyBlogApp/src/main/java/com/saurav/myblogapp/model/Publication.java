@@ -4,11 +4,16 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Publication {
@@ -23,6 +28,8 @@ public class Publication {
     private PublicationState state;
     private PublicationType type;
     
+   // @JsonBackReference
+    @JsonIgnore
     @ManyToMany(mappedBy="publications")
     private List<User> authors;
   // private List<UserComment> comments;

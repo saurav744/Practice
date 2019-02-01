@@ -1,5 +1,8 @@
 package com.oops;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Main extends Object{
 
     public static void main(String[] args){
@@ -7,6 +10,8 @@ public class Main extends Object{
         animal.move(5);
         Animal animal2 = null;
         String s= "bunny";
+
+        Map hmap = new HashMap<>();
 
         System.out.println("value are : "+animal.getName()+"  and ");
 

@@ -9,7 +9,7 @@ import com.saurav.myblogapp.model.User;
 
 public interface PublicationService {
 
-    public void addPublication(Publication publication);
+    public Publication addPublication(Publication publication);
 
     public void deletePublication(long id) throws PublicationNotFoundException;
 

@@ -9,6 +9,11 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 public class UserComment {
 
@@ -17,11 +22,17 @@ public class UserComment {
 	private long id;
 	private String body;
 	private Date addedDate;
+	
 	@ManyToOne
 	@JoinColumn(name = "user_id", referencedColumnName="id")
+	@OnDelete(action = OnDeleteAction.CASCADE)
+	@JsonIgnore
 	private User user;
+	
 	@ManyToOne
 	@JoinColumn(name = "publication_id", referencedColumnName="id")
+	@OnDelete(action = OnDeleteAction.CASCADE)
+	@JsonIgnore
 	private Publication publication;
 
 	public UserComment(String body, User user, Date date, Publication publication) {

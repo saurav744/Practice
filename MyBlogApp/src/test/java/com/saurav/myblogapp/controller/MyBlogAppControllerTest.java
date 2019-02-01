@@ -7,7 +7,8 @@ import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.skyscreamer.jsonassert.JSONAssert;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -23,7 +24,8 @@ import com.saurav.myblogapp.model.UserType;
 import com.saurav.myblogapp.service.UserService;
 
 @RunWith(SpringRunner.class)
-@WebMvcTest(value = MyBlogAppController.class, secure = false)
+@SpringBootTest
+@AutoConfigureMockMvc
 public class MyBlogAppControllerTest {
 	
 	@Autowired
@@ -34,7 +36,7 @@ public class MyBlogAppControllerTest {
 	
 	User mockUser = new User("Simba", "Pumba", "lion@king", "HakunaMatata", UserType.BLOGGER );
 	
-	String userJson = "{\"firstName\": \"Simbha\",\"lastName\": \"Pumba\",\"email\": \"lion@king\",\"password\": \"HakunaMatata\",\"type\": \"BLOGGER\"}";
+	String userJson = "{\"firstName\": \"Simba\",\"lastName\": \"Pumba\",\"email\": \"lion@king\",\"password\": \"HakunaMatata\",\"type\": \"BLOGGER\"}";
 	
 	@Test
 	public void testGetUserById_001() throws Exception {
@@ -44,12 +46,12 @@ public class MyBlogAppControllerTest {
 				).thenReturn(mockUser);
 		
 		RequestBuilder requestBuilder = MockMvcRequestBuilders
-				.get("/users/1")
+				.get("/users/id/0")
 				.accept(MediaType.APPLICATION_JSON);
 		
 		MvcResult result = mockMvc.perform(requestBuilder).andReturn();
 		
-		String expected = "{id:1,firstName:Simbha,lastname:Pumba,email:lion@king}";
+		String expected = "{id:0,firstName:Simba,lastName:Pumba,email:lion@king}";
 		
 		JSONAssert.assertEquals(expected, result.getResponse()
 				.getContentAsString(), false);
@@ -69,7 +71,7 @@ public class MyBlogAppControllerTest {
 
 		MockHttpServletResponse response = result.getResponse();
 
-		assertEquals(HttpStatus.CREATED.value(), response.getStatus());
+		assertEquals(HttpStatus.OK.value(), response.getStatus());
 
 	}
 

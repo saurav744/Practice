@@ -10,7 +10,7 @@ public interface UserService {
 
     public void addUser(String firstName, String lastName, String email, String password, UserType type);
 
-    public void addUSer(String firstName, String lastName, String email, String password);
+    public void addUser(String firstName, String lastName, String email, String password);
 
     public void deleteUser(long id) throws UserNotFoundException;
 
