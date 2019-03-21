@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c6de309f-d7d0-4d66-83d1-ba1e52b2b7c6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/MyBlogApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/model/Publication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/model/PublicationState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/model/PublicationType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/model/UserComment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/model/UserType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/service/PublicationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/service/PublicationServiceFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/service/PublicationServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/service/UserServiceFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/control/service/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/data_access/PublicationRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/data_access/PublicationRepositoryFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/data_access/PublicationRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/data_access/TableCreator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/data_access/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/data_access/UserRepositoryFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/data_access/UserRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/data_access/UserRepositoryJdbcImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/exceptions/PublicationNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/exceptions/UserNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/saurav/myblogapp/presentation/MyBlogAppClient.class" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/com/saurav/myblogapp/control/model/PublicationState.java" />
+        <option value="$PROJECT_DIR$/src/com/saurav/myblogapp/control/service/UserServiceHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/saurav/myblogapp/data_access/UserRepositoryFactory.java" />
+        <option value="$PROJECT_DIR$/src/com/saurav/myblogapp/control/service/UserServiceFactory.java" />
+        <option value="$PROJECT_DIR$/src/com/saurav/myblogapp/data_access/PublicationRepositoryFactory.java" />
+        <option value="$PROJECT_DIR$/src/com/saurav/myblogapp/control/service/PublicationServiceFactory.java" />
+        <option value="$PROJECT_DIR$/src/com/saurav/myblogapp/MyBlogApp.java" />
+        <option value="$PROJECT_DIR$/src/com/saurav/myblogapp/control/model/UserType.java" />
+        <option value="$PROJECT_DIR$/src/com/saurav/myblogapp/control/model/Comment.java" />
+        <option value="$PROJECT_DIR$/src/com/saurav/myblogapp/control/model/UserComment.java" />
+        <option value="$PROJECT_DIR$/src/com/saurav/myblogapp/data_access/UserRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/saurav/myblogapp/data_access/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/com/saurav/myblogapp/control/model/PublicationType.java" />
+        <option value="$PROJECT_DIR$/src/com/saurav/myblogapp/control/model/Publication.java" />
+        <option value="$PROJECT_DIR$/src/com/saurav/myblogapp/control/model/User.java" />
+        <option value="$PROJECT_DIR$/src/com/saurav/myblogapp/control/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/com/saurav/myblogapp/control/service/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/saurav/myblogapp/data_access/PublicationRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/saurav/myblogapp/data_access/PublicationRepository.java" />
+        <option value="$PROJECT_DIR$/src/com/saurav/myblogapp/control/service/PublicationService.java" />
+        <option value="$PROJECT_DIR$/src/com/saurav/myblogapp/control/service/PublicationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/saurav/myblogapp/presentation/MyBlogAppClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepositoryFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/exceptions/UserNotFoundException.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/util/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/util/ConnectionHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/JdbcUserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/Publication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/UserComment.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/saurav/myblogapp/control/service/UserServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/PublicationRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/PublicationRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/exceptions/PublicationNotFoundException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/PublicationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/PublicationService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/saurav/myblogapp/control/service/PublicationServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/TableCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepositoryJdbcImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/presentation/MyBlogAppClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/User.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="69" />
+    <option name="y" value="-4" />
+    <option name="width" value="1851" />
+    <option name="height" value="1084" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546697632248" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.TableCreator">
+    <configuration name="TableCreator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.saurav.myblogapp.data_access.TableCreator" />
+      <module name="MyBlogApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.saurav.myblogapp.data_access.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBlogApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.saurav.myblogapp.control.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.saurav.myblogapp.control.service" />
+      <option name="MAIN_CLASS_NAME" value="com.saurav.myblogapp.control.service.UserServiceImplTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImplTest.test001_addUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBlogApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.saurav.myblogapp.control.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.saurav.myblogapp.control.service" />
+      <option name="MAIN_CLASS_NAME" value="com.saurav.myblogapp.control.service.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="test001_addUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImplTest.test002_updateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBlogApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.saurav.myblogapp.control.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.saurav.myblogapp.control.service" />
+      <option name="MAIN_CLASS_NAME" value="com.saurav.myblogapp.control.service.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="test002_updateUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImplTest.testUpdateUser_003" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBlogApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.saurav.myblogapp.control.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.saurav.myblogapp.control.service" />
+      <option name="MAIN_CLASS_NAME" value="com.saurav.myblogapp.control.service.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="testUpdateUser_003" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TableCreator" />
+        <item itemvalue="JUnit.UserServiceImplTest" />
+        <item itemvalue="JUnit.UserServiceImplTest.testUpdateUser_003" />
+        <item itemvalue="JUnit.UserServiceImplTest.test002_updateUser" />
+        <item itemvalue="JUnit.UserServiceImplTest.test001_addUser" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6de309f-d7d0-4d66-83d1-ba1e52b2b7c6" name="Default Changelist" comment="" />
+      <created>1544000477419</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1544000477419</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="UserServiceImplTest - 2018.12.15 at 04h 53m 23s.xml">
+      <configuration name="UserServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceImplTest - 2018.12.15 at 04h 54m 02s.xml">
+      <configuration name="UserServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceImplTest - 2018.12.15 at 04h 54m 17s.xml">
+      <configuration name="UserServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceImplTest - 2018.12.15 at 04h 54m 31s.xml">
+      <configuration name="UserServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceImplTest - 2018.12.15 at 04h 57m 51s.xml">
+      <configuration name="UserServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceImplTest_testUpdateUser_003 - 2018.12.15 at 06h 34m 46s.xml">
+      <configuration name="UserServiceImplTest.testUpdateUser_003" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceImplTest_testUpdateUser_003 - 2018.12.15 at 06h 36m 48s.xml">
+      <configuration name="UserServiceImplTest.testUpdateUser_003" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceImplTest_testUpdateUser_003 - 2018.12.15 at 06h 40m 45s.xml">
+      <configuration name="UserServiceImplTest.testUpdateUser_003" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceImplTest_testUpdateUser_003 - 2018.12.15 at 06h 45m 48s.xml">
+      <configuration name="UserServiceImplTest.testUpdateUser_003" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceImplTest - 2018.12.15 at 06h 46m 09s.xml">
+      <configuration name="UserServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="68" y="-11" width="1853" height="1092" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22603878" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Learn" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.3291536" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3291536" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.48589343" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39916405" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/saurav/myblogapp/model/Article.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/saurav/myblogapp/model/User.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/layers.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="304" column="19" selection-start-line="304" selection-start-column="19" selection-end-line="304" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="171" column="14" lean-forward="true" selection-start-line="171" selection-start-column="14" selection-end-line="171" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/lang/Exception.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-182">
+          <caret line="30" column="35" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/util/Constants.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/util/ConnectionHandler.java" />
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="311" column="27" selection-start-line="311" selection-start-column="27" selection-end-line="311" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/JdbcUserRepository.java" />
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="242" column="6" selection-start-line="242" selection-start-column="6" selection-end-line="242" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/saurav/myblogapp/control/service/PublicationServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/saurav/myblogapp/control/service/UserServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="84" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.sql/java/sql/ResultSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="237" column="11" selection-start-line="237" selection-start-column="11" selection-end-line="237" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.sql/java/sql/PreparedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="236" column="9" selection-start-line="236" selection-start-column="9" selection-end-line="236" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/MyBlogApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepositoryFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/UserServiceFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/PublicationServiceFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.sql/java/sql/Statement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="357" column="12" selection-start-line="357" selection-start-column="12" selection-end-line="357" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/PublicationRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/PublicationRepositoryFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/PublicationRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="126" column="33" lean-forward="true" selection-start-line="126" selection-start-column="33" selection-end-line="126" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/UserType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/PublicationType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/PublicationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/PublicationState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/PublicationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="56" column="60" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/exceptions/PublicationNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/exceptions/UserNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/TableCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="36" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/UserComment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/control/model/Publication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="872">
+          <caret line="72" column="28" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepositoryJdbcImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="872">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/presentation/MyBlogAppClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="872">
+          <caret line="590" column="41" selection-start-line="590" selection-start-column="41" selection-end-line="590" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/saurav/myblogapp/data_access/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>MyBlogApp</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
